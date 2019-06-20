@@ -1,0 +1,39 @@
+
+
+#Bash for-loop script to delete all files in a directory CAUTION!!
+
+for i in *; do sudo rm -f "$i"; echo $i; done
+
+#example
+for i in {1..5}
+do
+   echo "Welcome $i times"
+done
+
+#Rename image sequnce
+
+a=1
+for i in *.jpg; do
+  new=$(printf "%03d.jpg" "$a") #03 pad to length of 3
+  mv -i -- "$i" named/"$new"
+  let a=a+1
+done
+
+
+#Copy entire Pi image to PC
+
+#from git bash:
+ssh pi@192.168.1.100 "sudo dd if=/dev/mmcblk0 bs=1M | gzip -" | dd of=C:/Users/Will/Desktop/backup_5-31-18.gz
+
+#enter password and wait long time.
+
+#from Ubuntu terminal:
+ssh pi@192.168.1.118 "sudo dd if=/dev/mmcblk0 bs=1M | gzip -" | dd of=/home/will/Desktop/growbox-image_9-27-18.gz
+
+#enter password and wait long time.
+
+ssh pi@192.168.1.118 "sudo dd if=/home/pi/Desktop/setup.sh" | dd bs=1M of=/home/will/Desktop/setup-copy.sh
+
+
+
+🎵❤️ hmm...
