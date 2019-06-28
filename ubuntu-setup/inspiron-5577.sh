@@ -7,6 +7,7 @@ apt install -y net-tools
 apt install -y openssh-server
 apt install -y vlc
 apt install -y chromium-browser
+apt install -y w3m
 
 # get latest youtube-dl
 mkdir -pv /usr/local/bin
