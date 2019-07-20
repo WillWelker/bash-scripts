@@ -1,7 +1,8 @@
 # Pi Setup Script
 This project forked from a project called Remove Bloatware on the Raspberry Pi by @raspberrycoulis.
 Rather then keeping a backup of my initial setup Pi image, I use this script to automate as much as I can.
-First, Remove unused seftware from Raspberry Pi. This will remove the storage hogging programs and some other often never-used tools including:
+First, Remove unused seftware from Raspberry Pi. This will remove the storage hogging programs that I don't currently use on the Pi.
+
 --great software, just not needed for my Node-Red projects
 1. Wolfram Engine
 2. Libre Office
